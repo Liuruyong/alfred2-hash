@@ -47,10 +47,10 @@ class e4WorkflowApp
 		$this->setVersion($e4Config['app']['version']);
 		$this->setCacheTTL($e4Config['app']['cacheTTL']);
 
-		// Loading default configuration
-		if (count($e4Config['defaults']) > 0)
-			foreach ($e4Config['defaults'] AS $key => $value)
-				$this->addDefault($key, $value);
+//		// Loading default configuration
+//		if (count($e4Config['defaults']) > 0)
+//			foreach ($e4Config['defaults'] AS $key => $value)
+//				$this->addDefault($key, $value);
 
 		// Loading app commands
 		if (count($e4Config['commands']) > 0)
